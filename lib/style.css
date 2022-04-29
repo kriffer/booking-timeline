@@ -1,0 +1,96 @@
+/* Common styles */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+:root {
+  --blue: #109cf1;
+  --dark-blue: #334d6e;
+  --light-blue: #cfebfc;
+  --middle-blue: #9fd7f9;
+  --yellow: #ffb946;
+  --red: #f7685b;
+  --green: #2ed47a;
+  --purple: #885af8;
+  --black: #192a3e;
+  --table-black: #323c47;
+  --table-grey: #707683;
+  --grey: #90a0b7;
+  --grey-light: #c2cfe0;
+  --grey-extra-light: #eff1f4;
+  --grey-skeleton: #f5f6f8;
+  --grey-middle: #e0e4eb;
+  --white: #ffffff;
+}
+
+ 
+.table {
+  background-color: var(--white);
+  width: 100%;
+ 
+   
+}
+
+
+
+.table__header .table__cell {
+  color: var(--grey);
+  border-top: none;
+}
+
+.table__body  {
+ 
+  display: contents;
+  width: 100%;
+ 
+}
+ 
+
+.table__row {
+  position:relative;
+  grid: auto-flow / 80px calc(50% - 80px) 25% 15% 15%;
+  text-decoration: none;
+  display: table-row;
+  
+ 
+}
+ 
+
+.table__cell {
+  padding: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--table-black);
+  box-sizing: border-box;
+  display: table-cell;
+  align-items: center;
+  border-top: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+  border-left: 1px solid var(--grey);
+  padding: 5px;
+}
+
+ 
+
+.table__cell__booked__event {
+  
+  background: linear-gradient(to left, red 50%, transparent 50%) no-repeat;
+  position:absolute;
+  text-align: center;
+  background-color: red;
+  align-items: center;
+  cursor: pointer;
+ 
+}
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+  

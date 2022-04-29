@@ -1,0 +1,39 @@
+{
+  "name": "booking-timeline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "setupFilesAfterEnv": ["@testing-library/jest-dom/extend-expect"],
+    "testEnvironment": "jsdom",
+    "testRegex": "^.+\\.spec\\.ts$"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4"
+  }
+}

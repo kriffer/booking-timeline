@@ -1,0 +1,66 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+  <div id="root"></div>
+
+  <script type="module">
+
+    import BookingTimeline from './index.js';
+
+    const rooms = [
+      {
+        id: 1,
+        name: 'Double Room'
+      },
+      {
+        id: 2,
+        name: 'Triple Room'
+
+      },
+      {
+        id: 3,
+        name: 'Studio'
+
+      }
+    ]
+
+    const bookings = [
+      {
+        id: 1,
+        roomName: 'Double Room',
+        from: '2022-04-30',
+        to: '2022-05-03',
+        guestName: 'John Doe'
+
+      },
+      {
+        id: 2,
+        roomName: 'Triple Room',
+        from: '2022-05-10',
+        to: '2022-05-11',
+
+        guestName: 'Jane Air'
+      }
+      ,
+      {
+        id: 3,
+        roomName: 'Studio',
+        from: '2022-05-15',
+        to: '2022-05-22',
+        guestName: 'Mr. Elliot'
+      }
+    ]
+
+    const bookingTimeline = new BookingTimeline(null, null, rooms, bookings);
+
+    root.append(bookingTimeline.element);
+
+  </script>
+</body>
